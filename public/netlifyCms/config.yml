@@ -5,17 +5,13 @@ media_folder: public/img
 public_folder: img
 publish_mode: editorial_workflow
 collections:
-  - name: "blog"
+  - name: "Family"
     label: "Blog"
-    folder: "content"
+    folder: "pages/Family"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - {label: "Featured Image", name: "thumbnail", widget: "image"}
-        - {label: "Body", name: "body", widget: "markdown"}
+    fields:
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
