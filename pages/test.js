@@ -1,4 +1,4 @@
-import Layout from '../../components/Layout';
+import Layout from '../components/Layout';
 
 export default function family({ title, description, ...props }) {
     return (
@@ -17,7 +17,7 @@ export default function family({ title, description, ...props }) {
 }
 
 export async function getStaticProps() {
-    const siteData = await import(`../../config.json`);
+    const siteData = await import(`../config.json`);
   
     return {
       props: {
