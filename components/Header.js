@@ -8,9 +8,9 @@ export default function Header() {
             <Link href="/">
                 <a>Home</a>
             </Link>
-            {/* <Link href="/Family">
-                <a>Blog</a>
-            </Link> */}
+            <Link href="/github">
+                <a>Github</a>
+            </Link> 
         </nav>
       </header>
     </>
